@@ -1,9 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -128,10 +126,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp ESCAPE  &kp MINUS      &kp UNDERSCORE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                                &mmv MOVE_UP                     &kp EXCL    &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR       &kp DELETE
+&trans      &kp EQUAL      &kp PLUS          &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE                     &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN  &kp UP     &kp RIGHT  &kp SEMICOLON  &trans
+&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION      &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &trans                    &mmv MOVE_DOWN                   &kp INSERT  &kp HOME  &kp END    &kp PG_UP  &kp PG_DN      &trans
+                                             &trans            &trans             &kp ENTER                                                                     &kp SPACE   &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
