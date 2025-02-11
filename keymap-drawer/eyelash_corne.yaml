@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - '&lsft_caps'
   - A
   - S
   - D
@@ -43,7 +43,7 @@ layers:
   - {t: /, h: Switch, s: '?'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
-  - NUMBER
+  - A
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYMBOL
