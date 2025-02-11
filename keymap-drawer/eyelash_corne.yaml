@@ -43,7 +43,7 @@ layers:
   - {t: /, h: Switch, s: '?'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
-  - A
+  - NUMBER
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYMBOL
